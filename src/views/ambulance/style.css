@@ -51,6 +51,7 @@ td {
 .css-sghohy-MuiButtonBase-root-MuiButton-root {
   background: #dfe4ec !important;
   color: #002c82 !important;
+  padding: 6px 16px !important;
 }
 .tablecard {
   background: #f8f8f8;

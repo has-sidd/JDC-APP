@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import { CAvatar } from '@coreui/react'
 import avatar8 from './../../assets/images/avatars/8.jpg'
 import CIcon from '@coreui/icons-react'
@@ -13,7 +14,9 @@ const LogoutBtn = () => {
         <span className="name">John Doe</span>
         <span className="role">Administrator</span>
       </div>
-      <CIcon icon={cilAccountLogout} size="xxl" className="logoutbtn" />
+      <Link to="/login">
+        <CIcon icon={cilAccountLogout} size="xxl" className="logoutbtn" />
+      </Link>
     </>
   )
 }
