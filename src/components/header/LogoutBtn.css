@@ -1,0 +1,54 @@
+.names {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+.name {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: -0.02em;
+}
+.role {
+  font-family: Poppins;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: -0.02em;
+}
+.logoutbtn {
+  color: #fe0b0b;
+  padding: 3px;
+}
+
+@media (max-width: 520px) {
+  .name {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: -0.02em;
+  }
+  .role {
+    font-family: Poppins;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 9px;
+    line-height: 18px;
+    letter-spacing: -0.02em;
+  }
+  .logoutbtn {
+    color: #fe0b0b;
+    padding: 3px;
+    width: 1.3rem !important;
+    height: 1.3rem !important;
+  }
+  .avatar {
+    width: 1.8rem !important;
+    height: 1.8rem !important;
+  }
+}

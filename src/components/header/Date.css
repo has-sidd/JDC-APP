@@ -1,0 +1,27 @@
+.date {
+  background: rgba(0, 44, 130, 0.1);
+  border-radius: 5px;
+  padding: 10px 22px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  /* width: 7.6vw; */
+}
+.txt {
+  color: #002c82;
+  font-weight: 500;
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+@media (max-width: 1335px) {
+  .date {
+    padding: 8px 12px;
+  }
+  .txt {
+    color: #002c82;
+    font-weight: 500;
+    font-size: 14px;
+    margin-right: 10px;
+  }
+}

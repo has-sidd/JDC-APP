@@ -1,0 +1,38 @@
+.sidebar {
+  background: linear-gradient(180deg, #002c82 0%, #1c4fb3 100%);
+}
+.sidebarHeader {
+  background: none;
+}
+html:not([dir='rtl']) .sidebar {
+  border-right: var(--cui-sidebar-border-width) solid var(--cui-sidebar-border-color) !important;
+}
+.sidebarItems {
+  margin: auto 2px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 33px;
+  letter-spacing: -0.02em;
+  color: #f8f8f8;
+}
+
+@media (max-width: 1335px) {
+  html:not([dir='rtl']) .sidebar.sidebar-fixed:not(.sidebar-end) {
+    left: 0 !important;
+  }
+  html:not([dir='rtl']) .sidebar:not(.sidebar-end):not(.show) {
+    margin-left: calc(-1 * var(--cui-sidebar-width)) !important;
+  }
+  .sidebar {
+    --cui-is-mobile: true;
+    position: fixed !important;
+    top: 0 !important;
+    bottom: 0 !important;
+    z-index: 1031 !important;
+  }
+  .sidebar:not(.sidebar-end) ~ * {
+    --cui-sidebar-occupy-start: 0 !important;
+  }
+}

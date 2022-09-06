@@ -1,0 +1,59 @@
+tr {
+  border: 1px solid transparent;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.cont {
+  margin: 80px 0px;
+}
+.tabletitle {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 20px;
+  /* identical to box height */
+
+  color: #383838;
+}
+.heading {
+  background: #dfe4ec;
+  border-radius: 12px;
+}
+th {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12.8032px;
+  line-height: 19px;
+
+  color: #353535;
+}
+.name {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.drivertxt {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14.9371px;
+  line-height: 22px;
+
+  color: #464e5f;
+}
+td {
+  align-items: center;
+}
+.css-sghohy-MuiButtonBase-root-MuiButton-root {
+  background: #dfe4ec !important;
+  color: #002c82 !important;
+}
+.tablecard {
+  background: #f8f8f8;
+  box-shadow: 8px 8px 12px rgba(206, 206, 206, 0.15);
+  border-radius: 12px;
+}
