@@ -1,9 +1,23 @@
-import React from 'react'
-import { Button } from '@mui/material'
+import React, { useState } from 'react'
+import { Button, Box, Typography, Modal, TextField } from '@mui/material'
 import './style.css'
 import logo from '../../../src/assets/images/Avatar.png'
+import Popup from './Popup'
 
 const Row = () => {
+  const [open, setOpen] = useState(false)
+  const [show, setShow] = useState(false)
+  const [occupied, setOccupied] = useState(false)
+
+  const handleOpen = () => (!occupied ? setOpen(true) : setShow(true))
+  const handleClose = () => {
+    setOpen(false)
+    setShow(false)
+  }
+  const handleSubmit = () => {
+    setOccupied(true)
+    handleClose()
+  }
   return (
     <>
       <tr>
@@ -20,9 +34,10 @@ const Row = () => {
           <a href="#">View on map</a>
         </td>
         <td>
-          <Button style={{ BackgroundColor: '#DFE4EC' }} variant="contained">
-            Occupied
+          <Button onClick={handleOpen} style={{ BackgroundColor: '#DFE4EC' }} variant="contained">
+            {occupied ? 'Occupied' : 'Unoccupied'}
           </Button>
+          <Popup open={open} show={show} handleClose={handleClose} handleSubmit={handleSubmit} />
         </td>
       </tr>
     </>

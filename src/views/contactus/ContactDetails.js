@@ -7,7 +7,7 @@ const ContactDetails = () => {
   return (
     <>
       <CCol className="" lg={5}>
-        <h1 className="heading">Contact Form</h1>
+        <h1 className="contactheading">Contact Form</h1>
         <span className="sub-heading">Please fill this form for the message.</span>
         <div>
           <TextField
